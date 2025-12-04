@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <!-- Social Links -->
+        <!-- Social Links -->
 <div class="socials">
   <a 
     href="https://github.com/0premthecoder" 
@@ -74,6 +74,39 @@
   </a>
 </div>
 
+<!-- Tech Stack -->
+<div class="tech-stack">
+  <h2 class="tech-title">Tech Stack</h2>
+
+  <div class="tech-list">
+    <div class="tech-row">
+      <span class="tech-dot"></span>
+      <p>Vue.js / JavaScript / TypeScript</p>
+    </div>
+
+    <div class="tech-row">
+      <span class="tech-dot"></span>
+      <p>Python (Automation, Data Handling, Flask and Django)</p>
+    </div>
+
+    <div class="tech-row">
+      <span class="tech-dot"></span>
+      <p>HTML, CSS, Tailwind, UI/UX structuring</p>
+    </div>
+
+    <div class="tech-row">
+      <span class="tech-dot"></span>
+      <p>Node.js & APIs (basic backend)</p>
+    </div>
+
+    <div class="tech-row">
+      <span class="tech-dot"></span>
+      <p>DSA • AI/ML fundamentals (Building...)</p>
+    </div>
+  </div>
+</div>
+
+
   </section>
 </template>
 
@@ -82,6 +115,61 @@
 </script>
 
 <style scoped>
+/* Tech Stack Section */
+.tech-stack {
+  margin-top: 50px;
+  padding-left: 15px;
+  border-left: 3px dashed var(--stroke);
+}
+
+.tech-title {
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--text);
+  position: relative;
+}
+
+/* Timeline List */
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each row */
+.tech-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+/* Dot (sketch style) */
+.tech-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--stroke);
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 2px 2px 0 var(--stroke);
+  flex-shrink: 0;
+}
+
+.tech-row p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* Hover: wiggle the dot, like a sketch moment */
+.tech-row:hover .tech-dot {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--stroke);
+  transition: 0.15s ease;
+}
 
 /* Social section */
 .socials {
